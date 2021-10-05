@@ -6,11 +6,10 @@
         xmlns:local="clr-namespace:FormEjercicio1"
         mc:Ignorable="d"
         Title="FormEjer01"
-        MaxHeight="450"
         MaxWidth="800"
-        MinHeight="225"
         MinWidth="400"
-        Icon="assets/48.ico">
+        Icon="assets/48.ico"
+        Height="349.13">
     <StackPanel Margin="10">
 
         <StackPanel Height="58"
@@ -29,7 +28,8 @@
             <TextBlock TextWrapping="Wrap"
                        Text="Nombre"
                        Padding="5"
-                       FontWeight="Bold" />
+                       FontWeight="Bold"
+                       FontSize="16" />
             
             <TextBox Height="19"
                      TextWrapping="Wrap"
@@ -54,7 +54,8 @@
             <TextBlock TextWrapping="Wrap"
                        Text="Dirección"
                        Padding="5"
-                       FontWeight="Bold" />
+                       FontWeight="Bold"
+                       FontSize="16" />
             
             <TextBox Height="19"
                      TextWrapping="Wrap"
@@ -79,7 +80,8 @@
             <TextBlock TextWrapping="Wrap"
                        Text="Correo Electrónico"
                        Padding="5"
-                       FontWeight="Bold" />
+                       FontWeight="Bold"
+                       FontSize="16" />
             
             <TextBox Height="19"
                      TextWrapping="Wrap"
