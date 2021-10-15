@@ -10,102 +10,145 @@
         MinWidth="400"
         Icon="assets/48.ico"
         Height="349.13">
+    <Window.Resources>
+
+        <Style TargetType="{x:Type StackPanel}"
+               x:Key="Formulario">
+
+            <Setter Property="Height"
+                    Value="58" />
+            <Setter Property="Margin"
+                    Value="0,0,0,15" />
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}"
+               x:Key="Degradado1"
+               BasedOn="{StaticResource Formulario}">
+
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                         StartPoint="0.5,0">
+                        <GradientStop Color="White"
+                                      Offset="1" />
+                        <GradientStop Color="#FF01A617"
+                                      Offset="0.213" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}"
+               x:Key="Degradado2"
+               BasedOn="{StaticResource Formulario}">
+
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                         StartPoint="0.5,0">
+                        <GradientStop Color="White"
+                                      Offset="1" />
+                        <GradientStop Color="#FF03C9B7"
+                                      Offset="0.213" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}"
+               x:Key="Degradado3"
+               BasedOn="{StaticResource Formulario}">
+
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                         StartPoint="0.5,0">
+                        <GradientStop Color="White"
+                                      Offset="1" />
+                        <GradientStop Color="#FFFF5F83"
+                                      Offset="0.213" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+
+            <Setter Property="Padding"
+                    Value="5" />
+
+            <Setter Property="FontWeight"
+                    Value="Bold" />
+
+            <Setter Property="FontSize"
+                    Value="16" />
+
+        </Style>
+
+        <Style TargetType="{x:Type TextBox}">
+
+            <Setter Property="Height"
+                    Value="19" />
+
+            <Setter Property="TextWrapping"
+                    Value="Wrap" />
+
+            <Setter Property="VerticalAlignment"
+                    Value="Bottom" />
+
+            <Setter Property="Margin"
+                    Value="5, 0, 5, 15" />
+
+        </Style>
+
+        <Style TargetType="{x:Type Button}">
+
+            <Setter Property="Width"
+                    Value="100" />
+            <Setter Property="Margin"
+                    Value="5" />
+        </Style>
+    </Window.Resources>
+
     <StackPanel Margin="10">
 
-        <StackPanel Height="58"
-                    Margin="0, 0, 0, 15">
-            
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1"
-                                     StartPoint="0.5,0">
-                    <GradientStop Color="White"
-                                  Offset="1" />
-                    <GradientStop Color="#FF01A617"
-                                  Offset="0.213" />
-                </LinearGradientBrush>
-            </StackPanel.Background>
-            
-            <TextBlock TextWrapping="Wrap"
-                       Text="Nombre"
-                       Padding="5"
-                       FontWeight="Bold"
-                       FontSize="16" />
-            
-            <TextBox Height="19"
-                     TextWrapping="Wrap"
-                     VerticalAlignment="Bottom"
-                     Margin="5, 0, 5, 15" />
-            
-        </StackPanel>
+        <StackPanel Style="{StaticResource Degradado1}">
 
-        <StackPanel Height="58"
-                    Margin="0, 0, 0, 15">
-            
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1"
-                                     StartPoint="0.5,0">
-                    <GradientStop Color="White"
-                                  Offset="1" />
-                    <GradientStop Color="#FF03C9B7"
-                                  Offset="0.213" />
-                </LinearGradientBrush>
-            </StackPanel.Background>
-            
-            <TextBlock TextWrapping="Wrap"
-                       Text="Dirección"
-                       Padding="5"
-                       FontWeight="Bold"
-                       FontSize="16" />
-            
-            <TextBox Height="19"
-                     TextWrapping="Wrap"
-                     VerticalAlignment="Bottom"
-                     Margin="5, 0, 5, 15" />
+            <TextBlock Text="Nombre" />
+
+            <TextBox />
 
         </StackPanel>
 
-        <StackPanel Height="58"
-                    Margin="0, 0, 0, 15">
-            
-            <StackPanel.Background>
-                <LinearGradientBrush EndPoint="0.5,1"
-                                     StartPoint="0.5,0">
-                    <GradientStop Color="White"
-                                  Offset="1" />
-                    <GradientStop Color="#FFFF5F83"
-                                  Offset="0.213" />
-                </LinearGradientBrush>
-            </StackPanel.Background>
-            
-            <TextBlock TextWrapping="Wrap"
-                       Text="Correo Electrónico"
-                       Padding="5"
-                       FontWeight="Bold"
-                       FontSize="16" />
-            
-            <TextBox Height="19"
-                     TextWrapping="Wrap"
-                     VerticalAlignment="Bottom"
-                     HorizontalAlignment="Left"
-                     MinWidth="500"
-                     Margin="5, 0, 5, 15" />
+        <StackPanel Style="{StaticResource Degradado2}">
+
+            <TextBlock Text="Dirección" />
+
+            <TextBox />
+
+        </StackPanel>
+
+        <StackPanel Style="{StaticResource Degradado3}">
+
+            <TextBlock Text="Correo Electrónico" />
+
+            <TextBox HorizontalAlignment="Left"
+                     MinWidth="500" />
 
         </StackPanel>
 
         <WrapPanel Height="41"
                    HorizontalAlignment="Right">
-            
-            <Button Width="100"
-                    Margin="5"
-                    Content="Aceptar" />
-            <Button 
-                Width="100"
-                Content="Cancelar" 
-                Margin="5"/>
-            
+
+            <Button Content="Aceptar" />
+
+            <Button Content="Cancelar" />
 
         </WrapPanel>
-        
+
 
     </StackPanel>
 </Window>
